@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #33261d;
+  color: #fffff0;
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin: 0 16px;
+}
+
+.form-item {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.button {
+  position: absolute;
+  right: 5%;
+  padding: 4px 16px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+.special {
+  margin-bottom: 16px;
+}
