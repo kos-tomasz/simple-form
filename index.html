@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple form</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main class="main">
+      <div>
+        <h1>Simple form</h1>
+        <form method="POST" action="http://dev.cotenfrontend.pl/">
+          <p>
+            <label for="firstName">First name:</label>
+            <input
+              class="form-item"
+              id="firstName"
+              name="firstName"
+              type="text"
+            />
+          </p>
+          <p>
+            <label
+              >Your age:
+              <input id="age" name="age" type="number" class="form-item" />
+            </label>
+          </p>
+          <p>
+            <label for="email">E-mail:</label>
+            <input id="email" name="email" type="email" class="form-item" />
+          </p>
+          <p>
+            <label for="tel">Phone number:</label>
+            <input class="form-item" id="tel" name="tel" type="tel" />
+          </p>
+          <p>
+            <label for="cool">Show me how cool u are:</label>
+            <input
+              class="form-item"
+              id="cool"
+              name="cool"
+              type="range"
+              min="0"
+              max="5"
+              step="1"
+              value="1"
+            />
+          </p>
+          <fieldset class="special">
+            <legend>Choose one of them:</legend>
+            <p>
+              <label>
+                <input name="choice" type="radio" value="sport" />
+                Sport</label
+              >
+            </p>
+            <p>
+              <label>
+                <input checked name="choice" type="radio" value="programming" />
+                Programming</label
+              >
+            </p>
+            <p>
+              <label>
+                <input name="choice" type="radio" value="book" />
+                Book</label
+              >
+            </p>
+            <p>
+              <label>
+                <input name="choice" type="radio" value="cinema" />
+                Cinema</label
+              >
+            </p>
+            <p>
+              <label for="music">Your favourite type of music:</label>
+              <select id="music" name="music">
+                <option value="pop">Pop</option>
+                <option value="hip hop">Hip hop</option>
+                <option value="reggae">Reggae</option>
+                <option value="latin">Latin</option>
+              </select>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Optional fields</legend>
+            <p>
+              <label for="password">Password to your bank account:</label>
+              <input
+                class="form-item"
+                id="password"
+                name="password"
+                type="password"
+              />
+            </p>
+            <p>
+              <label for="area">Your story:</label>
+              <textarea
+                class="form-item"
+                id="area"
+                name="area"
+                placeholder="You can say hello.."
+              ></textarea>
+            </p>
+            <p>
+              <label for="file">Choose file:</label>
+              <input class="form-item" id="file" name="file" type="file" />
+            </p>
+          </fieldset>
+          <p>
+            <label
+              ><input required checked type="checkbox" /> I agree for
+              everything.</label
+            >
+          </p>
+          <p class="relative">
+            <input class="button" type="submit" value="Send" />
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
